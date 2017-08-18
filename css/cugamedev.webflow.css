@@ -1,0 +1,1619 @@
+body {
+  background-color: transparent;
+  font-family: Roboto, sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 22px;
+}
+h1 {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 19px;
+  margin-left: auto;
+  float: none;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  font-family: Inconsolata, monospace;
+  color: #dedede;
+  font-size: 24px;
+  line-height: 44px;
+  font-weight: 500;
+  text-align: center;
+}
+h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 500;
+}
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+p {
+  margin: 0px 0px 5px;
+  padding-top: 0px;
+  font-family: Inconsolata, monospace;
+  color: #525252;
+  font-size: 13px;
+  line-height: 18px;
+}
+.button {
+  display: block;
+  width: 524px;
+  height: 113px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  padding: 13px 23px;
+  border-radius: 0px;
+  background-color: transparent;
+  background-image: url('../images/about us.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  box-shadow: none;
+  opacity: 0.64;
+  -webkit-transition: all 210ms ease-in;
+  transition: all 210ms ease-in;
+  font-family:'Roboto Slab', sans-serif;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.button:hover {
+  border-radius: 0px;
+  box-shadow: none;
+  opacity: 1;
+}
+.button:focus {
+  box-shadow: none;
+  -webkit-transition-property: none;
+  transition-property: none;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.button.hollow {
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px 0px, black 0px 0px 0px 2px inset;
+  color: black;
+  text-shadow: none;
+}
+.button.hollow:hover {
+  background-color: #489fd9;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px 0px, #489fd9 0px 0px 0px 2px inset;
+  color: white;
+  text-shadow: none;
+}
+.button.in-pricing {
+  display: block;
+  margin-top: 19px;
+  margin-right: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.button.event {
+  min-width: 0px;
+  background-image: url('../images/about us-02.png');
+  background-position: 54% 54%;
+  background-size: 482px;
+  box-shadow: none;
+  opacity: 0.64;
+}
+.button.event:hover {
+  box-shadow: none;
+  opacity: 1;
+}
+.button.blogs {
+  background-image: url('../images/blog-03.png');
+  background-position: 0% 45%;
+  background-size: auto;
+  box-shadow: none;
+  opacity: 0.64;
+}
+.button.blogs:hover {
+  box-shadow: none;
+  opacity: 1;
+}
+.button.meet {
+  width: 975px;
+  background-image: url('../images/meet the guild-04.png');
+  background-position: 50% 50%;
+  background-size: 1031px;
+  box-shadow: none;
+  opacity: 0.64;
+}
+.button.meet:hover {
+  box-shadow: none;
+  opacity: 1;
+}
+.logo-text {
+  margin-top: 24px;
+  font-family:'Roboto Slab', sans-serif;
+  color: #1c1c1c;
+  font-size: 27px;
+  font-weight: 500;
+}
+.logo-text.footer {
+  margin-top: 0px;
+  margin-bottom: 19px;
+  color: #e6eaed;
+}
+.navigation {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 0px 0px;
+}
+.nav-link {
+  padding: 26px 17px;
+  box-shadow: transparent 0px 3px 0px 0px inset;
+  -webkit-transition: box-shadow 500ms ease, color 300ms ease;
+  transition: box-shadow 500ms ease, color 300ms ease;
+  font-family: Inconsolata, monospace;
+  color: white;
+}
+.nav-link:hover {
+  box-shadow: rgba(181, 181, 181, 0.49) 0px 3px 0px 0px inset;
+  color: #1cd9d2;
+}
+.nav-link.w--current {
+  box-shadow: #4dbd90 0px 3px 0px 0px inset;
+  color: #4dbd90;
+}
+.section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgba(0, 0, 0, 0.36);
+}
+.section.blue {
+  background-color: #e3f3fc;
+}
+.section.main {
+  margin-top: 0px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #4dbd90;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.59), transparent), url('../images/banner day.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.59), transparent), url('../images/banner day.png');
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll, fixed;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px;
+}
+.section.grey {
+  background-color: #f0f0f0;
+}
+.section.image {
+  background-image: url('../images/town.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  color: white;
+}
+.section.footer {
+  padding-top: 29px;
+  padding-bottom: 29px;
+  background-color: #2b2c2e;
+  color: #e4e8eb;
+}
+.section.footer.copyright {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  background-color: #1c1d1f;
+  color: #939596;
+  font-size: 14px;
+}
+.section.purple {
+  background-color: #dde7ed;
+}
+.section.clients {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #a1bfd4;
+}
+.section.press {
+  padding-top: 29px;
+  padding-bottom: 38px;
+  background-color: #3e5c50;
+}
+.section._1 {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #dde7ed;
+  -webkit-transition: all 283ms ease-in;
+  transition: all 283ms ease-in;
+}
+.slider {
+  display: none;
+  height: 360px;
+  background-color: #303030;
+}
+.slide {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.slide._1 {
+  background-color: #00ad6e;
+}
+.slide._2 {
+  background-color: #00bdd6;
+}
+.slide._3 {
+  background-color: #ccbe00;
+}
+.main-subtitle {
+  margin-bottom: 26px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 300;
+}
+.footer-slogan {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  font-family: Inconsolata, monospace;
+  color: #939596;
+  text-align: center;
+}
+.social-icon {
+  margin-right: 11px;
+  float: none;
+  opacity: 0.41;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+.social-icon:hover {
+  opacity: 1;
+}
+.footer-title {
+  margin-top: 0px;
+  font-family:'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.page-link {
+  border-bottom: 1px solid transparent;
+  -webkit-transition: color 300ms ease, border 300ms ease;
+  transition: color 300ms ease, border 300ms ease;
+  color: #489fd9;
+  text-decoration: none;
+}
+.page-link:hover {
+  border-bottom-color: #489fd9;
+}
+.page-link.in-footer {
+  display: block;
+  color: #939596;
+}
+.page-link.in-footer:hover {
+  border-bottom-color: transparent;
+  color: #d2d7d9;
+}
+.page-link.white {
+  border-bottom-color: rgba(255, 255, 255, 0.49);
+  color: white;
+}
+.page-link.white:hover {
+  border-bottom-color: white;
+}
+.newsletter-field {
+  display: block;
+  width: 78%;
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  float: left;
+  border: 1px solid transparent;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background-color: #e8e8e8;
+  font-family: Inconsolata, monospace;
+}
+.newsletter-field:focus {
+  border-width: 1px;
+  border-color: #09f;
+  box-shadow: #489fd9 0px 0px 6px 0px;
+}
+.newsletter-button {
+  display: block;
+  width: 22%;
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  float: left;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: #5f6166;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  font-family: Inconsolata, monospace;
+  color: #d5d8db;
+}
+.newsletter-button:hover {
+  background-color: #489fd9;
+  color: white;
+}
+.newsletter-form {
+  position: static;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  overflow-x: visible;
+  overflow-y: visible;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.social-icon-group {
+  margin-top: -13px;
+}
+.brand-link {
+  text-decoration: none;
+}
+.success-message {
+  padding-top: 10px;
+  background-color: #5f6166;
+}
+.main-heading {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 38px;
+  line-height: 44px;
+}
+.section-subtitle {
+  margin-bottom: 68px;
+  font-size: 19px;
+  line-height: 22px;
+  font-weight: 300;
+  text-align: center;
+}
+.bold-text {
+  font-weight: 400;
+}
+.plan-wrapper {
+  min-height: 300px;
+  padding: 17px;
+  border-radius: 3px;
+  background-color: white;
+  color: #2b2b2b;
+}
+.price-point {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.price-accent {
+  color: #489fd9;
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+.addl-feature {
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.addl-feature.inactive {
+  color: #c7c5c5;
+  text-decoration: line-through;
+}
+.divider {
+  width: 50%;
+  height: 1px;
+  margin-top: 13px;
+  margin-bottom: 12px;
+  background-color: #dbdbdb;
+}
+.additional-contact {
+  margin-top: 21px;
+  text-align: center;
+}
+.feature {
+  text-align: left;
+}
+.feature.centered {
+  text-align: center;
+}
+.feature-row {
+  margin-right: 0px;
+  margin-bottom: 14px;
+  margin-left: 0px;
+}
+.testimonial-slider {
+  height: auto;
+  margin-top: 45px;
+  background-color: transparent;
+}
+.testimony-slide {
+  padding-top: 0px;
+  padding-right: 10%;
+  padding-left: 10%;
+  text-align: center;
+}
+.testimony-text {
+  margin-bottom: 21px;
+  font-family:'Roboto Slab', sans-serif;
+  font-size: 25px;
+  line-height: 31px;
+  font-weight: 300;
+}
+.slide-nav {
+  display: none;
+  font-size: 10px;
+}
+.person {
+  width: 70px;
+  margin-bottom: 13px;
+  border-radius: 100%;
+}
+.name {
+  font-weight: 500;
+}
+.title {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 44px;
+  margin-left: auto;
+}
+.slider-arrow {
+  width: 50px;
+  -webkit-transition: color 300ms ease;
+  transition: color 300ms ease;
+  color: #bdbdbd;
+  font-size: 32px;
+}
+.slider-arrow:hover {
+  color: black;
+}
+.feature-icon {
+  margin-bottom: 12px;
+}
+.main-feature-group {
+  margin-top: 30px;
+}
+.center-contents {
+  text-align: center;
+}
+.small-features-row {
+  margin-top: 71px;
+}
+.client-logo {
+  width: 16.6%;
+}
+.press-logo {
+  width: 16%;
+  margin-right: 2%;
+  margin-left: 2%;
+  opacity: 0.94;
+}
+.small-text {
+  color: rgba(255, 255, 255, 0.29);
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+.logo {
+  padding: 35px;
+}
+.logos {
+  margin-top: 7px;
+  float: none;
+  opacity: 0.66;
+  -webkit-transition: all 173ms ease-in;
+  transition: all 173ms ease-in;
+}
+.logos:hover {
+  opacity: 1;
+}
+.header-text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  font-family: Inconsolata, monospace;
+  font-size: 18px;
+  line-height: 10px;
+  font-weight: 400;
+  text-align: center;
+}
+.footer-text {
+  font-family: Inconsolata, monospace;
+}
+.personal-link {
+  -webkit-transition: all 246ms ease;
+  transition: all 246ms ease;
+  color: #e3e3e3;
+  text-decoration: none;
+}
+.personal-link:hover {
+  color: white;
+}
+.text-div {
+  display: block;
+  width: 750px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.56);
+}
+.about-us {
+  display: block;
+  min-width: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  padding: 10px 30px 50px;
+  background-color: #28a2a6;
+}
+.about {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #28a2a6;
+}
+.controller-row {
+  margin-top: -10px;
+}
+.about-row {
+  padding-left: 30px;
+}
+.about-image {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-left: auto;
+}
+.about-image:hover {
+  background-image: url('../images/magnifying glass color.png');
+}
+.about-container {
+  display: block;
+  overflow-x: visible;
+  overflow-y: visible;
+  height: auto;
+  padding-right: 45px;
+  padding-left: 45px;
+}
+.about-headings {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: #e8e8e8;
+  font-size: 32px;
+}
+.map {
+  height: 200px;
+  padding-top: 38px;
+  border-radius: 11px;
+}
+.footer-image {
+  display: block;
+  margin-right: auto;
+  margin-bottom: -3px;
+  margin-left: auto;
+}
+.error-message {
+  margin-bottom: 0px;
+  background-color: #5e5e5e;
+}
+.events {
+  min-width: 0px;
+  padding: 50px 0px;
+  background-color: #33b8bd;
+  box-shadow: none;
+}
+.blog {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #58d1ab;
+  box-shadow: none;
+}
+.meet-us {
+  min-width: 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #6bed9f;
+}
+.event-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 30px 50px;
+  background-color: #33b8bd;
+}
+.blog-section {
+  padding: 10px 30px 50px;
+  background-color: #58d1ab;
+}
+.meet-us-section {
+  padding: 10px 30px 50px;
+  background-color: #6bed9f;
+}
+.event-heading {
+  margin-bottom: 10px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: #e8e8e8;
+  text-align: left;
+}
+.event-heading.past {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  text-align: right;
+}
+.event-text {
+  margin-bottom: 4px;
+  font-family: Inconsolata, monospace;
+  color: #e8e8e8;
+}
+.event-text.past {
+  padding-right: 5px;
+  line-height: 15px;
+  text-align: right;
+}
+.event-text.future {
+  margin-bottom: 46px;
+  padding-left: 1px;
+  line-height: 15px;
+  text-align: left;
+}
+.events-column {
+  padding-right: 20px;
+  border-right: 4px solid #e8e8e8;
+  border-left: 4px none #e8e8e8;
+}
+.entwined-jam {
+  margin-bottom: 5px;
+  opacity: 1;
+  -webkit-transition: all 228ms ease-in-out;
+  transition: all 228ms ease-in-out;
+}
+.entwined-jam:hover {
+  -webkit-transition-property: none;
+  transition-property: none;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.jam-link {
+  -webkit-transition: all 301ms ease-in;
+  transition: all 301ms ease-in;
+  color: #454545;
+  text-decoration: none;
+}
+.jam-link:hover {
+  color: #c2c2c2;
+}
+.entwined-heading {
+  margin-top: 5px;
+  margin-bottom: 12px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: #f0f0f0;
+  font-size: 29px;
+  line-height: 13px;
+  text-align: right;
+}
+.entwined-heading.future {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  text-align: left;
+}
+.entwined-subheading {
+  margin-bottom: 10px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  font-size: 23px;
+  line-height: 10px;
+  text-align: right;
+}
+.entwined-subheading.future {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: #dedede;
+  text-align: left;
+}
+.future-column {
+  padding-left: 20px;
+}
+.tumblr-post {
+  display: block;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0px;
+}
+.blog-container {
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.slide-1 {
+  height: 302px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 200px;
+}
+.blog-slider {
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 750px;
+  background-color: rgba(255, 255, 255, 0.09);
+}
+.slide-2 {
+  padding-left: 200px;
+}
+.prof-pic {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.guild-heading {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: white;
+  font-size: 24px;
+  line-height: 15px;
+}
+.meet-us-block {
+  display: none;
+  margin-bottom: 35px;
+}
+.meet-slider {
+  display: block;
+  height: 350px;
+  margin-right: 175px;
+  margin-left: 175px;
+  padding-top: 10px;
+  padding-right: 150px;
+  padding-left: 150px;
+  border-radius: 23px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.about-paragraph {
+  margin-left: 49px;
+  padding-left: 1px;
+  color: white;
+  font-size: 15px;
+  line-height: 20px;
+}
+.about-ending {
+  margin-top: 25px;
+  font-family: Inconsolata, monospace;
+  color: white;
+  font-size: 19px;
+  text-align: center;
+}
+.subscribe {
+  display: block;
+  margin-right: auto;
+  margin-bottom: -10px;
+  margin-left: auto;
+  padding-bottom: 0px;
+}
+.form-submission {
+  margin-left: 14px;
+  color: #f7f7f7;
+  font-size: 15px;
+}
+.analyze {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url('../images/magnifying glass.png');
+  background-size: contain;
+}
+.about-images {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-right: auto;
+  margin-bottom: -10px;
+  margin-left: auto;
+  background-image: url('../images/magnifying glass.png');
+  background-position: 50% 50%;
+  background-size: 180px;
+  background-repeat: no-repeat;
+}
+.about-images:hover {
+  margin-bottom: -10px;
+  background-image: url('../images/magnifying glass color.png');
+  background-position: 50% 50%;
+  background-size: 180px;
+  background-repeat: no-repeat;
+}
+.about-images.create {
+  background-image: url('../images/brush.png');
+}
+.about-images.create:hover {
+  background-image: url('../images/brush color.png');
+  background-position: 50% 50%;
+  background-size: 180px;
+  background-repeat: no-repeat;
+}
+.about-images.play {
+  background-image: url('../images/gamepad.png');
+}
+.about-images.play:hover {
+  background-image: url('../images/gamepad color.png');
+  background-position: 50% 50%;
+  background-size: 180px;
+  background-repeat: no-repeat;
+}
+.bio {
+  display: block;
+  height: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+html.w-mod-js *[data-ix="fade-in-on-load"] {
+  opacity: 0;
+  -webkit-transform: translate(0px, 24px);
+  -ms-transform: translate(0px, 24px);
+  transform: translate(0px, 24px);
+}
+html.w-mod-js *[data-ix="fade-in-on-scroll"] {
+  opacity: 0;
+  -webkit-transform: translate(0px, 24px);
+  -ms-transform: translate(0px, 24px);
+  transform: translate(0px, 24px);
+}
+html.w-mod-js *[data-ix="display-none-on-load"] {
+  display: none;
+}
+@media (max-width: 991px) {
+  .button {
+    box-shadow: none;
+  }
+  .button.in-pricing {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .button.event {
+    box-shadow: none;
+  }
+  .button.ipad {
+    width: 420px;
+    height: 26px;
+    background-color: transparent;
+    background-image: url('../images/blog-03.png');
+    background-position: 100% 50%;
+    box-shadow: none;
+  }
+  .button.ipad-events {
+    width: 420px;
+    height: 85px;
+    background-image: url('../images/about us-02.png');
+    background-position: 50% 50%;
+    box-shadow: none;
+  }
+  .button.ipad-about {
+    width: 465px;
+    height: 90px;
+    background-position: 50% 27%;
+    box-shadow: none;
+  }
+  .button.ipad-about:hover {
+    box-shadow: none;
+  }
+  .button.ipad-about:active {
+    box-shadow: none;
+    opacity: 1;
+  }
+  .button.ipad-meet {
+    height: 175px;
+    background-image: url('../images/about us ipad-04.png');
+    background-position: 50% 50%;
+    box-shadow: none;
+  }
+  .nav-link {
+    padding: 18px 0px;
+    color: white;
+    text-align: center;
+  }
+  .nav-link:hover {
+    box-shadow: transparent 0px 3px 0px 0px inset;
+  }
+  .nav-link.w--current {
+    box-shadow: transparent 0px 1px 0px 0px inset;
+  }
+  .nav-link.menu {
+    padding: 22px 17px;
+    color: black;
+    font-size: 30px;
+  }
+  .nav-link.menu.w--open {
+    background-color: black;
+    color: white;
+  }
+  .nav-link.menu.ipad {
+    margin-right: 0px;
+    float: right;
+  }
+  .nav-link.menu.ipad.w--open {
+    left: 0px;
+    top: 0px;
+  }
+  .section.main {
+    padding-top: 125px;
+  }
+  .nav-menu {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background-color: black;
+  }
+  .nav-menu.iphone-portrait {
+    left: 600px;
+    padding-right: 34px;
+    padding-left: 0px;
+  }
+  .main-feature-group {
+    margin-top: 0px;
+  }
+  .main-image {
+    margin-top: 49px;
+  }
+  .footer-text {
+    line-height: 16px;
+  }
+  .tablet-header-text {
+    margin: 15px 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.56);
+    font-family: Inconsolata, monospace;
+    text-align: center;
+  }
+  .logo-link-ipad.w--current {
+    float: left;
+  }
+  .about-headings {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .events {
+    box-shadow: none;
+  }
+  .blog {
+    box-shadow: none;
+  }
+  .event-container {
+    padding-bottom: 10px;
+  }
+  .event-heading {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .event-heading.past {file:///Users/jiayintang/Desktop/Dev/GameDev/public_html/index.html
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .entwined-heading {
+    margin-bottom: 5px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    line-height: 23px;
+  }
+  .entwined-heading.future {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .entwined-heading.iphone {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .entwined-subheading {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .entwined-subheading.future {
+    margin-bottom: 5px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    line-height: 22px;
+  }
+  .entwined-subheading.iphone {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .slide-1 {
+    display: block;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+  }
+  .guild-heading {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .ipad-slider {
+    margin-right: 75px;
+    margin-left: 75px;
+    padding-top: 0px;
+    padding-right: 100px;
+    padding-left: 100px;
+    background-color: transparent;
+  }
+  .iphone-event-heading {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .iphone-event-heading.current {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  h3 {
+    margin-bottom: 8px;
+  }
+  p {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.56);
+    color: whitesmoke;
+    font-size: 14px;
+    text-align: center;
+  }
+  .button {
+    box-shadow: none;
+  }
+  .logo-text {
+    margin-top: 15px;
+  }
+  .nav-link {
+    text-align: left;
+  }
+  .nav-link.menu {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+  .nav-link.menu.ipad {
+    margin-top: 4px;
+    margin-right: 0px;
+    margin-bottom: -10px;
+  }
+  .nav-link.menu.ipad.w--open {
+    right: 0px;
+    bottom: 0px;
+    margin-right: 0px;
+  }
+  .section {
+    padding-top: 43px;
+    padding-bottom: 43px;
+    text-align: center;
+  }
+  .section.main {
+    margin-top: 0px;
+  }
+  .nav-menu {
+    left: 450px;
+    top: 51px;
+    margin-right: 2px;
+    padding-right: 12px;
+    padding-left: 32px;
+    background-color: rgba(0, 0, 0, 0.74);
+  }
+  .nav-menu.iphone-portrait {
+    left: 400px;
+    top: 0px;
+    padding-left: 50px;
+  }
+  .social-icon {
+    margin-left: -5px;
+  }
+  .social-icon._2 {
+    margin-right: -5px;
+    float: right;
+  }
+  .footer-title {
+    margin-top: 35px;
+  }
+  .newsletter-form {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section-subtitle {
+    margin-bottom: 44px;
+  }
+  .plan-wrapper {
+    margin-right: 5%;
+    margin-bottom: 34px;
+    margin-left: 5%;
+  }
+  .divider {
+    width: 100%;
+  }
+  .feature {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .feature-icon {
+    margin-bottom: 4px;
+  }
+  .main-feature-group {
+    margin-top: 0px;
+    margin-bottom: 34px;
+  }
+  .footer-text {
+    line-height: 14px;
+  }
+  .iphone-logo.w--current {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    padding-top: 0px;
+    float: left;
+    opacity: 0.55;
+    -webkit-transition: all 210ms ease-in;
+    transition: all 210ms ease-in;
+  }
+  .iphone-logo.w--current:hover {
+    opacity: 1;
+  }
+  .iphone-land-text {
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.54);
+    font-family: Inconsolata, monospace;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .nav-cp {
+    margin-top: 15px;
+  }
+  .about-headings {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .map {
+    margin-bottom: 10px;
+  }
+  .events {
+    box-shadow: none;
+  }
+  .blog {
+    box-shadow: none;
+  }
+  .event-text.past {
+    margin-top: -3px;
+  }
+  .event-text.future {
+    margin-bottom: 25px;
+  }
+  .entwined-heading {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .entwined-heading.future {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    font-size: 22px;
+  }
+  .entwined-heading.iphone {
+    margin-top: 0px;
+    padding-right: 2px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    font-size: 19px;
+  }
+  .entwined-subheading {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .entwined-subheading.future {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    font-size: 17px;
+  }
+  .entwined-subheading.iphone {
+    margin-top: -5px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    font-size: 17px;
+  }
+  .guild-heading {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .about-paragraph {
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 0px;
+    background-color: transparent;
+  }
+  .about-ending {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .about-images {
+    width: 150px;
+    height: 150px;
+    background-size: 125px;
+  }
+  .about-images:hover {
+We're making game design and development accessible to the Columbia community. 
+Join us for game creation and discussion. 
+
+And fun. That too.
+    background-size: 125px 125px;
+  }
+  .about-images.create:hover {
+    background-image: url('../images/brush color.png'), none;
+    background-position: 50% 50%, 0% 0%;
+    background-size: 125px 125px, auto;
+    background-repeat: no-repeat, repeat;
+  }
+  .about-images.play:hover {
+    background-image: url('../images/gamepad color.png'), none;
+    background-position: 50% 50%, 0% 0%;
+    background-size: 125px 125px, auto;
+    background-repeat: no-repeat, repeat;
+  }
+  .hero-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.59), transparent 51%), url('../images/banner day.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.59), transparent 51%), url('../images/banner day.png');
+    background-position: 0% 0%, 50% 0px;
+    background-size: auto, 780px;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+  }
+  .hero-text {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-bottom: 15px;
+  }
+  .hero-container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .hero-text-buffer {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .about-iphone {
+    padding-top: 30px;
+    padding-bottom: 6px;
+    background-color: #28a2a6;
+  }
+  .iphone-button {
+    display: block;
+    width: 319px;
+    height: 75px;
+    min-width: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url('../images/about us.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    opacity: 0.47;
+  }
+  .iphone-button:active {
+    opacity: 1;
+  }
+  .iphone-button.event {
+    display: block;
+    background-image: url('../images/about us-02.png');
+    box-shadow: none;
+  }
+  .iphone-button.blogs {
+    background-image: url('../images/blog-03.png');
+    box-shadow: none;
+  }
+  .iphone-button.meet {
+    width: 315px;
+    height: 125px;
+    background-image: url('../images/about us ipad-04.png');
+    background-size: cover;
+    box-shadow: none;
+  }
+  .events-iphone {
+    padding-top: 25px;
+    padding-bottom: 7px;
+    background-color: #33b8bd;
+  }
+  .blog-iphone {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    background-color: #58d1ab;
+  }
+  .meet-us-iphone {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #6bed9f;
+  }
+  .events-section-iphone {
+    display: none;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    background-color: #33b8bd;
+  }
+  .iphone-event-heading {
+    margin-top: -8px;
+    margin-bottom: 0px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    color: whitesmoke;
+    text-align: right;
+  }
+  .iphone-event-heading.current {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    text-align: left;
+  }
+  .current-events {
+    border-left: 4px solid whitesmoke;
+  }
+  .about-section-iphone {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: #28a2a6;
+  }
+  .meet-section-iphone {
+    margin-top: -1px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: #6bed9f;
+  }
+  .meet-iphone-slider {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 5px;
+    padding-right: 100px;
+    padding-left: 100px;
+    background-color: transparent;
+  }
+  .iphone-footer {
+    padding: 10px 20px;
+    background-color: #2b2c2e;
+  }
+  .footer-thing {
+    display: block;
+    margin-right: -5px;
+    margin-left: auto;
+    float: right;
+  }
+  .footer-thing._2 {
+    margin-left: -5px;
+    float: left;
+  }
+  .social-media-footer {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .bio-paragraphy {
+    padding: 0px;
+    background-color: transparent;
+    color: #525252;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: left;
+  }
+}
+@media (max-width: 479px) {
+  .nav-link.menu.ipad {
+    margin-top: 5px;
+  }
+  .nav-menu.iphone-portrait {
+    left: 150px;
+    top: 0px;
+    margin-right: 0px;
+    padding-left: 50px;
+  }
+  .footer-slogan {
+    font-size: 15px;
+    line-height: 16px;
+  }
+  .newsletter-field {
+    width: 64%;
+  }
+  .newsletter-button {
+    width: 36%;
+  }
+  .client-logo {
+    width: 33.33%;
+  }
+  .press-logo {
+    width: 28%;
+  }
+  .footer-text {
+    line-height: 14px;
+  }
+  .iphone-logo.w--current {
+    position: static;
+    margin-top: 15px;
+    margin-left: 0px;
+    float: left;
+    clear: left;
+  }
+  .iphone-portrait-text {
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.59);
+    font-family: Inconsolata, monospace;
+    font-size: 14px;
+  }
+  .nav-cp {
+    position: relative;
+  }
+  .nav-container {
+    margin-bottom: -8px;
+  }
+  .event-text.past {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .entwined-heading.future {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    font-size: 20px;
+  }
+  .entwined-heading.iphone {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    text-align: left;
+  }
+  .entwined-subheading.iphone {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    text-align: left;
+  }
+  .guild-heading {
+    margin-top: 0px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .hero-section {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .about-iphone {
+    padding-bottom: 5px;
+  }
+  .iphone-button {
+    width: 312px;
+    box-shadow: none;
+  }
+  .iphone-button.event {
+    box-shadow: none;
+  }
+  .iphone-button.event:active {
+    box-shadow: none;
+  }
+  .iphone-button.blogs {
+    box-shadow: none;
+  }
+  .iphone-button.meet {
+    box-shadow: none;
+  }
+  .events-iphone {
+    padding-bottom: 7px;
+  }
+  .meet-us-iphone {
+    padding-bottom: 20px;
+  }
+  .events-section-iphone {
+    background-color: #33b8bd;
+  }
+  .iphone-event-heading {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    text-align: center;
+  }
+  .iphone-event-heading.current {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    text-align: center;
+  }
+  .current-events {
+    border-top: 4px solid whitesmoke;
+    border-left-style: none;
+  }
+  .meet-iphone-slider {
+    padding-top: 5px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .bio-paragraphy {
+    font-size: 12px;
+    line-height: 13px;
+  }
+}
+
