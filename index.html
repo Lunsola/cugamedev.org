@@ -74,8 +74,7 @@
         <h2>Events</h2>
       <div class="portfolioFilter">  
         <ul class="Portfolio-nav wow fadeIn delay-02s">
-            <li><a href="#" data-filter=".upcoming" class="current">Upcoming</a></li>
-            <li><a href="#" data-filter=".2017">2017</a></li>
+            <li><a href="#" data-filter=".2017" class="current">2017</a></li>
             <li><a href="#" data-filter=".2016" >2016</a></li>
             <li><a href="#" data-filter=".2015" >2015</a></li>
         </ul>
@@ -83,9 +82,6 @@
     
     </div>
     <div class="portfolioContainer wow fadeInUp delay-04s">
-                <!-- UPCOMING -->
-
-
                 <!-- 2017 -->
                 <div class="Portfolio-box 2017" >
                     <img src="img/gamedevbonding.jpg" alt="">   
@@ -189,17 +185,11 @@
     <div class="container">
         <h2>Lessons</h2>
         <h6>An archive of workshops, tutorials, and tools to get you started!</h6>
-      <div class="portfolioFilter">  
-        <div class="c-logo-part"><!--c-logo-part-start-->
-        <div class="container">
-            <ul>
-              <li><a href="http://yuxshao.github.io/learn-gamedev/"><img src="img/gamemaker.jpg" alt=""></a></li>
-                <li><a href="https://drive.google.com/drive/folders/0B5GmejGqL1OGZk40b3ZGSFI1RU0?usp=sharing"><img src="img/unityengine.jpg" alt=""></a></li>
-                <!-- <li><a href="#"><img src="img/art.jpg" alt=""></a></li> -->
-                <!-- <li><a href="#"><img src="img/design.jpg" alt=""></a></li>  -->
-            </ul>
-        </div>
-        </div><!--c-logo-part-end-->
+        <ul class="Portfolio-nav wow fadeIn delay-02s">
+            <li><a style="padding:0" href="http://yuxshao.github.io/learn-gamedev/"><img src="img/gamemaker.jpg" alt=""></a></li>
+            <li><a style="padding:0" href="https://drive.google.com/drive/folders/0B5GmejGqL1OGZk40b3ZGSFI1RU0?usp=sharing"><img src="img/unityengine.jpg" alt=""></a></li>
+        </ul>
+    </div>
 </section><!--main-section-end-->
 
 <section class="main-section alabaster" id="About"><!--main-section alabaster-start-->
@@ -400,46 +390,42 @@
 <script type="text/javascript">
 
 $(window).load(function(){
-  
-  var $container = $('.portfolioContainer'),
-      $body = $('body'),
-      colW = 375,
-      columns = null;
+     var $container = $('.portfolioContainer'),
+         $body = $('body'),
+         colW = 375,
+         columns = null;
 
-  
-  $container.isotope({
-    // disable window resizing
-    filter: '.upcoming',
-    resizable: true,
-    masonry: {
-      columnWidth: colW
-    }
-  });
-  
-  $(window).smartresize(function(){
-    // check if columns has changed
-    var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
-    if ( currentColumns !== columns ) {
-      // set new column count
-      columns = currentColumns;
-      // apply width to container manually, then trigger relayout
-      $container.width( columns * colW )
-        .isotope('reLayout');
-    }
-    
-  }).smartresize(); // trigger resize to set container width
-  $('.portfolioFilter a').click(function(){
-        $('.portfolioFilter .current').removeClass('current');
-        $(this).addClass('current');
- 
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-			
-            filter: selector,
+
+     $container.isotope({
+         // disable window resizing
+         filter: '.2017',
+         resizable: true,
+         masonry: { columnWidth: colW }
+     });
+
+     $(window).smartresize(function(){
+         // check if columns has changed
+         var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+         if ( currentColumns !== columns ) {
+             // set new column count
+             columns = currentColumns;
+             // apply width to container manually, then trigger relayout
+             $container.width( columns * colW )
+                       .isotope('reLayout');
+         }
+
+     }).smartresize(); // trigger resize to set container width
+     $('.portfolioFilter a').click(function(){
+         $('.portfolioFilter .current').removeClass('current');
+         $(this).addClass('current');
+
+         var selector = $(this).attr('data-filter');
+         $container.isotope({
+             filter: selector,
          });
          return false;
-    });
-});
+     });
+ });
 
 </script>
 </body>
