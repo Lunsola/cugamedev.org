@@ -610,6 +610,7 @@ border: 2px solid #fff;
 	width:102px;
 	margin-right:12px;
 	line-height:28px;
+  color:#333333;
 }
 .contact-info-box h3 i{
 	font-style:normal;
@@ -659,6 +660,9 @@ border: 2px solid #fff;
 
 .form{
 	margin:0 66px 0 30px;
+}
+.form h2{
+    color:#333333;
 }
 .input-text{
 	padding:15px 16px;
