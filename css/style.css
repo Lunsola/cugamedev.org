@@ -99,7 +99,7 @@ p{
 .header{
 	text-align:center;
 	background:url(../img/pixels.gif);
-	background-repeat: no-repeat;
+	background-repeat: repeat-x;
 	padding:280px 0;
 	background-color: #000;
 }
